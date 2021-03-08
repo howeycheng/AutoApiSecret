@@ -90,9 +90,9 @@ def main():
             num1+=1
             print('14调用成功'+str(num1)+'次')
             
-        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/search(q='finance')?select=name,id,webUrl',headers=headers).status_code == 200:
-            num1+=1
-            print('15调用成功'+str(num1)+'次')
+#         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/search(q='finance')?select=name,id,webUrl',headers=headers).status_code == 200:
+#             num1+=1
+#             print('15调用成功'+str(num1)+'次')
             
         if req.get(r'https://graph.microsoft.com/beta/me/messages?$filter=mentionsPreview/isMentioned eq true&$select=subject,sender,receivedDateTime',headers=headers).status_code == 200:
             num1+=1
